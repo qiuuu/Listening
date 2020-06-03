@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">螃歌听力</string>
-    <string name="book1">新概念英语一</string>
-    <string name="book2">新概念英语二</string>
+    <string name="book1">一</string>
+    <string name="book2">二</string>
+    <string name="ad_banner_unit_id">ca-app-pub-5349410171010771/1071477823</string>
+    <string name="ad_native_play_unit_id">ca-app-pub-5349410171010771/1360226201</string>
 </resources>

@@ -1,37 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/start">
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="@string/book1"
-        android:textSize="22sp"
-        android:id="@+id/button1"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="8dp"
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/adBtn"
+        android:layout_width="76dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="109dp"
+        android:background="@mipmap/ss"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toRightOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+    <android.support.v7.widget.AppCompatImageButton
+
+        android:layout_width="63dp"
+        android:layout_height="71dp"
+        android:background="@mipmap/star1"
+        android:layout_marginLeft="53dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="46dp"
+        android:id="@+id/button1"
+        android:layout_marginStart="53dp" />
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/button2"
+        android:layout_width="78dp"
+        android:layout_height="96dp"
+        android:background="@mipmap/star2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="65dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="@string/book2"
-        android:textSize="22sp"
-        android:id="@+id/button2"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="33dp"
-        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintLeft_toRightOf="@+id/adBtn"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.516"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_banner_unit_id"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.gms.ads.AdView>
 
 </android.support.constraint.ConstraintLayout>
